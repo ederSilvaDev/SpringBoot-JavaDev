@@ -78,7 +78,8 @@
 				}),
 				contentType : "application/json; charset=utf-8",
 				success : function(response) {
-					alert("Gravou com Sucesso !")
+					$("id").val(response.id);
+					alert("Gravou com Sucesso !");
 				}
 
 			}).fail(function(xhr, status, errorThrown) {
